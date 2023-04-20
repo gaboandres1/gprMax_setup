@@ -1,0 +1,25 @@
+#title: Test scenario with heterogeneous soil and Tx in X0.156
+#domain: 0.6 0.6 0.6
+#dx_dy_dz: 0.001 0.001 0.001
+#time_window: 8.9e-9
+
+## Excitations
+#waveform: ricker 1 1e9 wave_ricker
+#waveform: gaussian 0 1e6 zero_pulse
+
+## Materials
+##material: 2.58 0 1 0 sandbox
+##material: 1.735 0 1 0 dielec
+#soil_peplinski: 0.7 0.3 2.0 2.66 0.01 0.1 my_soil
+
+## Objects
+#fractal_box: 0 0 0 0.6 0.4 0.6 1.5 1 1 1 20 my_soil my_soil_box 200
+#cylinder: 0.3 0.2 0.0 0.3 0.2 0.6 0.015 pec
+
+
+## Antennas
+#hertzian_dipole: z 0.156 0.45 0.3 wave_ricker
+#hertzian_dipole: z 0.206 0.45 0.3 zero_pulse
+
+#rx: 0.156 0.45 0.3
+#rx: 0.206 0.45 0.3
