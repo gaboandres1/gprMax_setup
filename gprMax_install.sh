@@ -18,15 +18,4 @@ git clone https://github.com/gprMax/gprMax.git
 cd gprMax
 conda env create -f conda_env.yml
 
-source ~/.bashrc
-
-conda activate gprMax
-#pip install pycuda
-
-python setup.py build
-python setup.py install
-
-
-
-
 
