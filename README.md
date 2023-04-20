@@ -22,3 +22,8 @@ python setup.py install
 ```
 
 Now, you are ready for use gprMax.
+
+```
+chmod +x run_parallel.sh
+time ./run_parallel.sh
+```
